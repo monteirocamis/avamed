@@ -33,7 +33,7 @@ Trata-se de um projeto de construção de uma API com .NET para gerenciamento de
 </a>
 
 ## Grupo
-### Camila Chaves
+### Camila Monteiro
 
 <img src="https://avatars.githubusercontent.com/u/26682838?v=4" width=115><br><sub>Camis</sub> (https://github.com/monteirocamis)
 
