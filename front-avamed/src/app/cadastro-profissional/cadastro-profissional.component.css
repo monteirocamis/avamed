@@ -1,0 +1,43 @@
+.box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 60px;
+  margin: 1em;
+  border-radius: 30px;
+}
+
+input{
+  border-radius: 5px;
+
+}
+
+.bg-avamed{
+
+  background-color: #EB7736 !important;
+  color: white;
+}
+
+select{
+/* padding:10px 100px; */
+width: 208px;
+}
+.btn-form{
+  padding: 10px 100px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.titulo-page{
+ font-weight: bold;
+ margin: 10px;
+}

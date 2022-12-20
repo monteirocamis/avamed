@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'beneficiario' , component: BeneficiariosComponent},
   {path: 'agendamento' , component: AgendamentoComponent},
   {path: 'cadastro-especialidade' , component: CadastroEspecialidadeComponent},
-  {path: 'cadastro-proficcional' , component: CadastroProfissionalComponent},
+  {path: 'cadastro-profissional' , component: CadastroProfissionalComponent},
   {path: 'hospital' , component: HospitalComponent},
   {path: '**' , redirectTo:'home'} // url desconhecida
 ];
