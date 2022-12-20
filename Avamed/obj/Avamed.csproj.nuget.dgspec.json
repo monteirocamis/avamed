@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\g.silva.malheiro\\Desktop\\New folder\\avamed\\Avamed\\Avamed.csproj": {}
+    "C:\\CSharp\\Avamed\\Avamed\\Avamed\\Avamed.csproj": {}
   },
   "projects": {
-    "C:\\Users\\g.silva.malheiro\\Desktop\\New folder\\avamed\\Avamed\\Avamed.csproj": {
+    "C:\\CSharp\\Avamed\\Avamed\\Avamed\\Avamed.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\g.silva.malheiro\\Desktop\\New folder\\avamed\\Avamed\\Avamed.csproj",
+        "projectUniqueName": "C:\\CSharp\\Avamed\\Avamed\\Avamed\\Avamed.csproj",
         "projectName": "Avamed",
-        "projectPath": "C:\\Users\\g.silva.malheiro\\Desktop\\New folder\\avamed\\Avamed\\Avamed.csproj",
-        "packagesPath": "C:\\Users\\g.silva.malheiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\g.silva.malheiro\\Desktop\\New folder\\avamed\\Avamed\\obj\\",
+        "projectPath": "C:\\CSharp\\Avamed\\Avamed\\Avamed\\Avamed.csproj",
+        "packagesPath": "C:\\Users\\pilar.leminski.veiga\\.nuget\\packages\\",
+        "outputPath": "C:\\CSharp\\Avamed\\Avamed\\Avamed\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\g.silva.malheiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pilar.leminski.veiga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
