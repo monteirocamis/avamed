@@ -1,7 +1,22 @@
+import { HospitalComponent } from './hospital/hospital.component';
+import { CadastroProfissionalComponent } from './cadastro-profissional/cadastro-profissional.component';
+import { CadastroEspecialidadeComponent } from './cadastro-especialidade/cadastro-especialidade.component';
+import { AgendamentoComponent } from './agendamento/agendamento.component';
+import { BeneficiariosComponent } from './beneficiarios/beneficiarios.component';
+import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: 'home' , component: HomeComponent},
+  {path: 'beneficiario' , component: BeneficiariosComponent},
+  {path: 'agendamento' , component: AgendamentoComponent},
+  {path: 'cadastro-especialidade' , component: CadastroEspecialidadeComponent},
+  {path: 'cadastro-proficcional' , component: CadastroProfissionalComponent},
+  {path: 'hospital' , component: HospitalComponent},
+  {path: '**' , redirectTo:'home'} // url desconhecida
+];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
