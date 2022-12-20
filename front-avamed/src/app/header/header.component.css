@@ -5,8 +5,16 @@
 
 header {
   background-color: #EB7736 ;
-}
-h1{
+  color: white;
+  text-align: center;
   display: flex;
-  justify-content: center;
+justify-content: space-evenly;
+align-items: center;
+}
+i{
+  font-size: 50px;
+}
+
+h1{
+  font-size: 30px;
 }
