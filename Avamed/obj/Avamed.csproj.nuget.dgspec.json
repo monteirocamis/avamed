@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CSharp\\Avamed\\Avamed\\Avamed\\Avamed.csproj": {}
+    "C:\\Users\\g.silva.malheiro\\Desktop\\New folder\\avamed\\Avamed\\Avamed.csproj": {}
   },
   "projects": {
-    "C:\\CSharp\\Avamed\\Avamed\\Avamed\\Avamed.csproj": {
+    "C:\\Users\\g.silva.malheiro\\Desktop\\New folder\\avamed\\Avamed\\Avamed.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CSharp\\Avamed\\Avamed\\Avamed\\Avamed.csproj",
+        "projectUniqueName": "C:\\Users\\g.silva.malheiro\\Desktop\\New folder\\avamed\\Avamed\\Avamed.csproj",
         "projectName": "Avamed",
-        "projectPath": "C:\\CSharp\\Avamed\\Avamed\\Avamed\\Avamed.csproj",
-        "packagesPath": "C:\\Users\\pilar.leminski.veiga\\.nuget\\packages\\",
-        "outputPath": "C:\\CSharp\\Avamed\\Avamed\\Avamed\\obj\\",
+        "projectPath": "C:\\Users\\g.silva.malheiro\\Desktop\\New folder\\avamed\\Avamed\\Avamed.csproj",
+        "packagesPath": "C:\\Users\\g.silva.malheiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\g.silva.malheiro\\Desktop\\New folder\\avamed\\Avamed\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pilar.leminski.veiga\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\g.silva.malheiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,6 +53,18 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Threading": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Threading.Tasks.Extensions": {
+              "target": "Package",
+              "version": "[4.5.4, )"
             }
           },
           "imports": [

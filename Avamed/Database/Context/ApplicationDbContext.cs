@@ -1,18 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using Avamed.Database;
 using Microsoft.EntityFrameworkCore;
 
-namespace Avamed.Database;
+namespace Avamed.Database.Context;
 
 public partial class ApplicationDbContext : DbContext
 {
+    private readonly IConfiguration _configuration;
+
     public ApplicationDbContext()
     {
     }
 
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+    public ApplicationDbContext(
+        DbContextOptions<ApplicationDbContext> options,
+        IConfiguration configuration)
         : base(options)
     {
+        _configuration = configuration;
+
     }
 
     public virtual DbSet<Agendamento> Agendamentos { get; set; }
@@ -30,8 +37,7 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<Profissional> Profissionals { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        => optionsBuilder.UseSqlServer(_configuration.GetConnectionString("Sql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
