@@ -52,3 +52,8 @@ Trata-se de um projeto de construção de uma API com .NET para gerenciamento de
 ### Íris Gonçalves Da Silva
 
 <img src="https://avatars.githubusercontent.com/u/107144112?v=4" width=115><br><sub>íris</sub> (https://github.com/IrisGoncalves-Silva)
+
+## telas :
+### beneficiarios
+![image](https://user-images.githubusercontent.com/26682838/208728307-29c5c31b-4b65-40b0-9e36-6b2851b2e594.png)
+
