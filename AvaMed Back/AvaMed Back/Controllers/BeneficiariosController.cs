@@ -9,21 +9,21 @@ namespace AvaMed_Back.Controllers
     [ApiController]
     public class BeneficiariosController : ControllerBase
     {
-        private readonly Projeto.Data.Contexto.AvamedContext  _contexto;
+        private readonly Projeto.Data.Contexto.AvamedContext _contexto;
         private readonly Projeto.Data.Interfaces.IBeneficiarioRepositorio _beneficiarioRepositorio;
 
         public BeneficiariosController(
-            Projeto.Data.Contexto.AvamedContext contexto, 
+            Projeto.Data.Contexto.AvamedContext _contexto,
             Projeto.Data.Interfaces.IBeneficiarioRepositorio beneficiarioRepositorio)
         {
-            _contexto = contexto;
+            _contexto = _contexto;
             _beneficiarioRepositorio = beneficiarioRepositorio;
         }
 
 
         [HttpGet]
         [Route("/ListarBeneficiarios")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<Projeto.Data.Dto.EspecialidadeDto>))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<Projeto.Data.Dto.BeneficiarioDto>))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult ListarBeneficiarios()
         {
@@ -70,7 +70,6 @@ namespace AvaMed_Back.Controllers
         {
             try
             {
-                // Gotta pay attention here
                 if (beneficiarioCadastrarDto == null ||
                     String.IsNullOrEmpty(beneficiarioCadastrarDto.Nome) ||
                     !beneficiarioCadastrarDto.Ativo)
@@ -109,10 +108,13 @@ namespace AvaMed_Back.Controllers
             {
                 return BadRequest(ex.Message);
             }
+
+
         }
 
+
         [HttpDelete]
-        [Route("/ExcluirEspecialidade")]
+        [Route("/ExcluirBeneficiario")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(int))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult Excluir(int id)
@@ -134,4 +136,4 @@ namespace AvaMed_Back.Controllers
 
 
     }
-}
+    }

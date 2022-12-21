@@ -11,7 +11,6 @@ namespace Projeto.Data.Repositorio
 {
     public class BeneficiarioRepositorio : IBeneficiarioRepositorio
     {
-
         private readonly Contexto.AvamedContext _contexto;
 
         public BeneficiarioRepositorio(Contexto.AvamedContext contexto)
@@ -21,76 +20,76 @@ namespace Projeto.Data.Repositorio
 
         public int Atualizar(BeneficiarioCadastrarDto cadastrarBeneficiarioDto)
         {
-            Entidades.Beneficiario beneficiarioEntidadeBanco =
+                Entidades.Beneficiario beneficiarioEntidadeSalvarBanco =
                 (from b in _contexto.Beneficiarios
                  where b.IdBeneficiario == cadastrarBeneficiarioDto.IdBeneficiario
                  select b)
                  .FirstOrDefault();
 
-            if (beneficiarioEntidadeBanco== null)
+            if (beneficiarioEntidadeSalvarBanco == null)
             {
                 return 0;
             }
 
-            beneficiarioEntidadeBanco.Nome = cadastrarBeneficiarioDto.Nome;
-            beneficiarioEntidadeBanco.Cpf = cadastrarBeneficiarioDto.Cpf;
-            beneficiarioEntidadeBanco.Telefone = cadastrarBeneficiarioDto.Telefone;
-            beneficiarioEntidadeBanco.Endereco = cadastrarBeneficiarioDto.Endereco;
-            beneficiarioEntidadeBanco.NumeroCarteirinha = cadastrarBeneficiarioDto.NumeroCarteirinha;
-            beneficiarioEntidadeBanco.Ativo = cadastrarBeneficiarioDto.Ativo;
-            beneficiarioEntidadeBanco.Email = cadastrarBeneficiarioDto.Email;
-            beneficiarioEntidadeBanco.Senha = cadastrarBeneficiarioDto.Senha;
+            beneficiarioEntidadeSalvarBanco.Nome = cadastrarBeneficiarioDto.Nome;
+            beneficiarioEntidadeSalvarBanco.Cpf = cadastrarBeneficiarioDto.Cpf;
+            beneficiarioEntidadeSalvarBanco.Telefone = cadastrarBeneficiarioDto.Telefone;
+            beneficiarioEntidadeSalvarBanco.Endereco = cadastrarBeneficiarioDto.Endereco;
+            beneficiarioEntidadeSalvarBanco.NumeroCarteirinha = cadastrarBeneficiarioDto.NumeroCarteirinha;
+            beneficiarioEntidadeSalvarBanco.Ativo = cadastrarBeneficiarioDto.Ativo;
+            beneficiarioEntidadeSalvarBanco.Email = cadastrarBeneficiarioDto.Email;
+            beneficiarioEntidadeSalvarBanco.Senha = cadastrarBeneficiarioDto.Senha;
 
-            return _contexto.SaveChanges();
+                return _contexto.SaveChanges();
+
+
+            throw new NotImplementedException();
         }
 
         public int Cadastrar(BeneficiarioCadastrarDto cadastrarBeneficiarioDto)
         {
             Entidades.Beneficiario beneficiarioEntidade = new Entidades.Beneficiario()
             {
-                Nome = cadastrarBeneficiarioDto.Nome                                ,
-                Cpf = cadastrarBeneficiarioDto.Cpf                                  ,
-                Telefone = cadastrarBeneficiarioDto.Telefone                        ,
-                Endereco = cadastrarBeneficiarioDto.Endereco                        ,
-                NumeroCarteirinha = cadastrarBeneficiarioDto.NumeroCarteirinha      ,
-                Ativo = cadastrarBeneficiarioDto.Ativo                              ,
-                Email = cadastrarBeneficiarioDto.Email                              ,
+                Nome = cadastrarBeneficiarioDto.Nome,
+                Cpf = cadastrarBeneficiarioDto.Cpf,
+                Telefone = cadastrarBeneficiarioDto.Telefone,
+                Endereco = cadastrarBeneficiarioDto.Endereco,
+                NumeroCarteirinha = cadastrarBeneficiarioDto.NumeroCarteirinha,
+                Ativo = cadastrarBeneficiarioDto.Ativo,
+                Email = cadastrarBeneficiarioDto.Email,
                 Senha = cadastrarBeneficiarioDto.Senha
             };
 
             _contexto.ChangeTracker.Clear();
             _contexto.Beneficiarios.Add(beneficiarioEntidade);
-            return _contexto.SaveChanges();
-
-
+            return  _contexto.SaveChanges();
             throw new NotImplementedException();
         }
 
         public int Excluir(int IdBeneficiario)
-        {
-            Entidades.Beneficiario beneficiarioEntidade=
+        {   
+            Entidades.Beneficiario beneficiarioExcluirBanco  = 
                 (from b in _contexto.Beneficiarios
                  where b.IdBeneficiario== IdBeneficiario
                  select b).FirstOrDefault();
 
-            if ( beneficiarioEntidade == null || DBNull.Value.Equals(beneficiarioEntidade.IdBeneficiario) || beneficiarioEntidade.IdBeneficiario == 0)
+            if(beneficiarioExcluirBanco == null || DBNull.Value.Equals(beneficiarioExcluirBanco.IdBeneficiario)|| beneficiarioExcluirBanco.IdBeneficiario == 0)
             {
                 return 0;
             }
 
             _contexto.ChangeTracker.Clear();
-            _contexto.Beneficiarios.Remove(beneficiarioEntidade);
+            _contexto.Beneficiarios.Remove(beneficiarioExcluirBanco);
             return _contexto.SaveChanges();
-
             throw new NotImplementedException();
         }
 
         public BeneficiarioDto ListarBeneficiarioPorId(int IdBeneficiario)
         {
             return (from b in _contexto.Beneficiarios
-                    where b.IdBeneficiario == IdBeneficiario
                     select new Dto.BeneficiarioDto()
                     {
+                        IdBeneficiario = b.IdBeneficiario,
                         Nome = b.Nome,
                         Cpf = b.Cpf,
                         Telefone = b.Telefone,
@@ -99,12 +98,12 @@ namespace Projeto.Data.Repositorio
                         Ativo = b.Ativo,
                         Email = b.Email,
                         Senha = b.Senha
-                    })
-                    ?.FirstOrDefault()
+                    })?.FirstOrDefault()
                     ?? new BeneficiarioDto();
+            throw new NotImplementedException();
         }
 
-        public List <Dto.BeneficiarioDto> ListarBeneficiarios()
+        public List<BeneficiarioDto> ListarBeneficiarios()
         {
             return (from b in _contexto.Beneficiarios
                     select new Dto.BeneficiarioDto()
@@ -119,8 +118,7 @@ namespace Projeto.Data.Repositorio
                         Email = b.Email,
                         Senha = b.Senha
                     }).ToList();
+            throw new NotImplementedException();
         }
-
-
     }
 }
