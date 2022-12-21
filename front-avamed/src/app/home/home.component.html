@@ -14,17 +14,22 @@
     <form class="form">
       <div class="row">
         <div class="col mb-3 bg-avamed beneficiario">
-          <label for="beneficiario" class="form-label">Beneficiario </label>
+          <button class="btn btn-form" type="button" (click)="navigateBeneficiario()">
+            Beneficiario
+          </button>
           <i class="bi bi-person"></i>
-          
+
        </div>
 
        <div class="col mb-3 bg-avamed">
-        <label for="Empresa" class="form-label">Empresa </label>
+        <button class="btn btn-form" type="button" (click)="navigateHospital()">
+          Hospital
+        </button>
+        <!-- <label for="Empresa" class="form-label" type="button"  (click)="navigateHospital()">Hospital</label> -->
         <i class="bi bi-building"></i>
      </div>
       </div>
-       
-      
+
+
     </form>
   </div>
