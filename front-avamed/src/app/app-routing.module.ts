@@ -1,3 +1,5 @@
+import { ResultadoProfissionaisComponent } from './resultado-profissionais/resultado-profissionais.component';
+import { ResultadoAgendamentoComponent } from './resultado-agendamento/resultado-agendamento.component';
 import { HospitalComponent } from './hospital/hospital.component';
 import { CadastroProfissionalComponent } from './cadastro-profissional/cadastro-profissional.component';
 import { CadastroEspecialidadeComponent } from './cadastro-especialidade/cadastro-especialidade.component';
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path: 'cadastro-especialidade' , component: CadastroEspecialidadeComponent},
   {path: 'cadastro-profissional' , component: CadastroProfissionalComponent},
   {path: 'hospital' , component: HospitalComponent},
+  {path: 'resultado-agendamento' , component: ResultadoAgendamentoComponent},
+  {path: 'resultado-profissionais' , component: ResultadoProfissionaisComponent},
   {path: '**' , redirectTo:'home'} // url desconhecida
 ];
 

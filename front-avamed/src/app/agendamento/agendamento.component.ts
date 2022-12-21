@@ -7,5 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./agendamento.component.css']
 })
 export class AgendamentoComponent {
+  navigateResultadoAgendamento(){
+    this.router.navigate(['resultado-agendamento'])
+  }
+  constructor(private router: Router ){
 
+  }
 }
