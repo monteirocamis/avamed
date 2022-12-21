@@ -4151,19 +4151,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\g.silva.malheiro\\.nuget\\packages\\": {}
+    "C:\\Users\\pilar.leminski.veiga\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\g.silva.malheiro\\Documents\\Programming\\Projects\\AvaMed Back\\AvaMed Back\\AvaMed Back.csproj",
+      "projectUniqueName": "C:\\CSharp\\github\\avamed\\AvaMed Back\\AvaMed Back\\AvaMed Back.csproj",
       "projectName": "AvaMed Back",
-      "projectPath": "C:\\Users\\g.silva.malheiro\\Documents\\Programming\\Projects\\AvaMed Back\\AvaMed Back\\AvaMed Back.csproj",
-      "packagesPath": "C:\\Users\\g.silva.malheiro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\g.silva.malheiro\\Documents\\Programming\\Projects\\AvaMed Back\\AvaMed Back\\obj\\",
+      "projectPath": "C:\\CSharp\\github\\avamed\\AvaMed Back\\AvaMed Back\\AvaMed Back.csproj",
+      "packagesPath": "C:\\Users\\pilar.leminski.veiga\\.nuget\\packages\\",
+      "outputPath": "C:\\CSharp\\github\\avamed\\AvaMed Back\\AvaMed Back\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\g.silva.malheiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pilar.leminski.veiga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4177,8 +4182,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\g.silva.malheiro\\Documents\\Programming\\Projects\\AvaMed Back\\Projeto.Data\\Projeto.Data.csproj": {
-              "projectPath": "C:\\Users\\g.silva.malheiro\\Documents\\Programming\\Projects\\AvaMed Back\\Projeto.Data\\Projeto.Data.csproj"
+            "C:\\CSharp\\github\\avamed\\AvaMed Back\\Projeto.Data\\Projeto.Data.csproj": {
+              "projectPath": "C:\\CSharp\\github\\avamed\\AvaMed Back\\Projeto.Data\\Projeto.Data.csproj"
             }
           }
         }
