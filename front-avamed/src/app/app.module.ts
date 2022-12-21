@@ -1,3 +1,4 @@
+import { NavigationService } from './service/navigation.service';
 import { BeneficiariosComponent } from './beneficiarios/beneficiarios.component';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -31,7 +32,7 @@ import { CadastroEspecialidadeComponent } from './cadastro-especialidade/cadastr
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [NavigationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
