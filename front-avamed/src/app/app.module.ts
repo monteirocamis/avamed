@@ -13,6 +13,8 @@ import { AgendamentoComponent } from './agendamento/agendamento.component';
 import { HospitalComponent } from './hospital/hospital.component';
 import { CadastroProfissionalComponent } from './cadastro-profissional/cadastro-profissional.component';
 import { CadastroEspecialidadeComponent } from './cadastro-especialidade/cadastro-especialidade.component';
+import { ResultadoAgendamentoComponent } from './resultado-agendamento/resultado-agendamento.component';
+import { ResultadoProfissionaisComponent } from './resultado-profissionais/resultado-profissionais.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { CadastroEspecialidadeComponent } from './cadastro-especialidade/cadastr
     AgendamentoComponent,
     HospitalComponent,
     CadastroProfissionalComponent,
-    CadastroEspecialidadeComponent
+    CadastroEspecialidadeComponent,
+    ResultadoAgendamentoComponent,
+    ResultadoProfissionaisComponent
   ],
   imports: [
     BrowserModule,
