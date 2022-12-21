@@ -29,7 +29,19 @@ input{
 
 select{
 /* padding:10px 100px; */
-width: 208px;
+width: 200px;
+}
+@media screen and (max-width: 500px) {
+  select{
+    /* padding:10px 100px; */
+    width: 110px;
+    }
+}
+@media screen and (max-width: 800px) {
+  select{
+    /* padding:10px 100px; */
+    width: 160px;
+    }
 }
 .btn-form{
   padding: 10px 100px;

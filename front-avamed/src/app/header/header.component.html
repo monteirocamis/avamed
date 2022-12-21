@@ -1,8 +1,8 @@
 
-<header class="row">
+<header class="row navigation">
 
     <div class="col-4">
-      <i class="material-icons">arrow_back</i>
+      <i class="material-icons" (click)="navigation.goBack()">arrow_back</i>
     </div>
 
     <div class="col-4">
@@ -12,5 +12,7 @@
       <div class="col-4">
         <h1 class="">  </h1>
       </div>
-
+      <!-- <span *ngFor="let url of navigation.getHistory(); let i = index">
+        {{i}}={{url}}
+    </span> -->
 </header>
