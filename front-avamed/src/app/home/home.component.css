@@ -1,0 +1,115 @@
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empresa{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+    border:#EB7736;
+    padding:0%;
+    margin:auto;
+
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 1px;
+  margin: 2em;
+  border-radius: 20px;
+}
+
+form .beneficiario{
+   margin-right: 10px;
+}
+  
+input{
+  border-radius: 50px;
+
+}
+
+.bg-avamed{
+
+  padding: 30px 10px;
+  border-radius: 10px;
+  background-color: #EB7736 !important;
+  color: white;
+}
+
+
+.btn-form{
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: #EB7736;
+  color: white;
+}
+
+.titulo-page{
+ font-weight: bold;
+ margin: 10px;
+}
+
+.beneficiario{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 1px;
+  margin: 2em;
+  border-radius: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+    padding: 50px;
+    margin: 10em;
+    border-radius: 25px;
+
+    
+  }
+
+input{
+  border-radius: 50px;
+
+}
+
+.bg-avamed{
+
+  background-color:#EB7736  !important;
+  color: white;
+}
+
+
+.btn-form{
+
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: #EB7736;
+  color: white;
+
+}
+
+.titulo-page{
+ font-weight: bold;
+ margin: 100px;
+}
+
