@@ -1,0 +1,14 @@
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\bin\Debug\net6.0\Projeto.Data.deps.json
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\bin\Debug\net6.0\Projeto.Data.runtimeconfig.json
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\bin\Debug\net6.0\Projeto.Data.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\bin\Debug\net6.0\Projeto.Data.pdb
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\obj\Debug\net6.0\Projeto.Data.csproj.AssemblyReference.cache
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\obj\Debug\net6.0\Projeto.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\obj\Debug\net6.0\Projeto.Data.AssemblyInfoInputs.cache
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\obj\Debug\net6.0\Projeto.Data.AssemblyInfo.cs
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\obj\Debug\net6.0\Projeto.Data.csproj.CoreCompileInputs.cache
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\obj\Debug\net6.0\Projeto.Data.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\obj\Debug\net6.0\refint\Projeto.Data.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\obj\Debug\net6.0\Projeto.Data.pdb
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\obj\Debug\net6.0\Projeto.Data.genruntimeconfig.cache
+C:\Users\g.silva.malheiro\Documents\Programming\Projects\AvaMed Back\Projeto.Data\obj\Debug\net6.0\ref\Projeto.Data.dll
