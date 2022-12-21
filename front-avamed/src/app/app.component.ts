@@ -1,3 +1,4 @@
+import { NavigationService } from './service/navigation.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'front-avamed';
+
+  constructor(public navigation: NavigationService) {
+    this.navigation.startSaveHistory();
+  }
 }

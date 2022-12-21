@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #EB7736 ;
+  color: white;
+  text-align: center;
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+i{
+  font-size: 50px;
+}
+
+h1{
+  font-size: 30px;
+}
