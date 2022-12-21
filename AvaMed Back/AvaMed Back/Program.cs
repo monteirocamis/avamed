@@ -22,6 +22,10 @@ namespace AvaMed_Back
                 Projeto.Data.Interfaces.IEspecialidadeRepositorio,
                 Projeto.Data.Repositorio.EspecialidadeRepositorio>();
 
+            builder.Services.AddScoped<
+                Projeto.Data.Interfaces.IAgendamentoRepositorio,
+                Projeto.Data.Repositorio.AgendamentoRepositorio>();
+
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("MinhaRegraCors",
