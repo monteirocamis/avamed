@@ -11,20 +11,20 @@
         </button>
         </div>
 
-    <form class="form">
-      <div class="row">
-        <div class="col mb-3 bg-avamed beneficiario">
-          <label for="beneficiario" class="form-label">Beneficiario </label>
-          <i class="material-icons">person</i>
-          
-       </div>
-
-       <div class="col mb-3 bg-avamed">
-        <label for="Empresa" class="form-label">Empresa </label>
-        <i class="material-icons">corporate_fare</i>
-     </div>
-      </div>
-       
-      
-    </form>
+      <form class="form">
+        <div class="row">
+          <button class="btn btn-form" type="button" (click)="navigateBeneficiario()">
+            <div class="col mb-3 bg-avamed beneficiario">
+              <label for="beneficiario" class="form-label">Beneficiario </label>
+              <i class="material-icons">person</i>
+            </div>
+          </button>
+          <button class="btn btn-form" type="button" (click)="navigateHospital()">
+            <div class="col mb-3 bg-avamed">
+              <label for="Empresa" class="form-label">Empresa </label>
+              <i class="material-icons">corporate_fare</i>
+            </div>
+          </button>
+        </div>
+      </form>
   </div>
