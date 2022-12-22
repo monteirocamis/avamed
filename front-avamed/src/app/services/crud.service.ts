@@ -1,4 +1,4 @@
-import { Dados } from './../models/placeholder.model';
+
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http'
