@@ -73,7 +73,8 @@ namespace Projeto.Data.Repositorio
                  where b.IdBeneficiario== IdBeneficiario
                  select b).FirstOrDefault();
 
-            if(beneficiarioExcluirBanco == null || DBNull.Value.Equals(beneficiarioExcluirBanco.IdBeneficiario)|| beneficiarioExcluirBanco.IdBeneficiario == 0)
+            if(beneficiarioExcluirBanco == null || DBNull.Value.Equals(beneficiarioExcluirBanco.IdBeneficiario)|| 
+                beneficiarioExcluirBanco.IdBeneficiario == 0)
             {
                 return 0;
             }

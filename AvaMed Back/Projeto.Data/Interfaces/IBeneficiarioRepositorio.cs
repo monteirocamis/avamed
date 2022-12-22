@@ -10,12 +10,12 @@ namespace Projeto.Data.Interfaces
     {
         public List<Dto.BeneficiarioDto> ListarBeneficiarios();
 
-        Dto.BeneficiarioDto ListarBeneficiarioPorId(int IdBeneficiario);
+        public Dto.BeneficiarioDto ListarBeneficiarioPorId(int IdBeneficiario);
 
-        int Cadastrar(Dto.BeneficiarioCadastrarDto cadastrarBeneficiarioDto);
+        public int Cadastrar(Dto.BeneficiarioCadastrarDto cadastrarBeneficiarioDto);
 
-        int Atualizar(Dto.BeneficiarioCadastrarDto cadastrarBeneficiarioDto);
+        public int Atualizar(Dto.BeneficiarioCadastrarDto cadastrarBeneficiarioDto);
 
-        int Excluir(int IdBeneficiario);
+        public int Excluir(int IdBeneficiario);
     }
 }
