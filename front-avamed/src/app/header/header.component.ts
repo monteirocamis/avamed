@@ -5,7 +5,7 @@ import {
   keyframes
 } from '@angular/animations';
 import { Router, RouterModule } from '@angular/router';
-import { NavigationService } from 'src/app/service/navigation.service';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-header',

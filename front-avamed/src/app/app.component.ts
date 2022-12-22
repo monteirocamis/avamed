@@ -1,4 +1,4 @@
-import { NavigationService } from './service/navigation.service';
+import { NavigationService } from './services/navigation.service';
 import { Component } from '@angular/core';
 
 @Component({
