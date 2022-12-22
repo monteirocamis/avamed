@@ -286,10 +286,11 @@ ASALocalRun/
 healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
-# Ionide (cross platform F# VS Code tools) working folder
+# Ionide (cross platform F# VS Code tools) working folders
 .ionide/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
 **/bin/* 
 **/obj/*
+**/vs/*
