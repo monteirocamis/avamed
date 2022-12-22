@@ -4,7 +4,7 @@ export interface IAgendamentoDto {
   idHospital:number,
   idEspecialidade:number,
   idProfissional:number,
-  dataHoraAgendamento:DateTime,
+  dataHoraAgendamento:Date,
  idBeneficiario:number,
   ativo:boolean,
 }
