@@ -293,4 +293,5 @@ FodyWeavers.xsd
 
 **/bin/* 
 **/obj/*
-**/vs/*
+.vs/
+.appsettings.json
