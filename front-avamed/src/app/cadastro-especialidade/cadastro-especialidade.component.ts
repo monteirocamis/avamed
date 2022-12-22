@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 
 
 @Component({
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './cadastro-especialidade.component.html',
   styleUrls: ['./cadastro-especialidade.component.css'],
 })
+
 export class CadastroEspecialidadeComponent {
 
 
