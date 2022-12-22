@@ -1,4 +1,4 @@
-import { Dados } from './../models/placeholder.model';
+// import { Dados } from './../models/placeholder.model';
 import { CrudService } from './../services/crud.service';
 import { Router } from '@angular/router';
 import { Component , OnInit } from '@angular/core';
@@ -13,20 +13,20 @@ export class ResultadoAgendamentoComponent implements OnInit{
     erro: any;
 
   constructor(private router: Router , private crudService: CrudService ){
-    this.getter
+    // this.getter
   }
 
 
   ngOnInit() { }
 
-    getter() {
-      this.crudService.getDados().subscribe((data: Dados) => {
-        this.dados = data;
-        console.log(this.dados);
-        console.log(data);
-        } , (error: any) => {
-          this.erro = error;
-          console.error( error)
-        });
-    }
+    // getter() {
+    //   this.crudService.getDados().subscribe((data: Dados) => {
+    //     this.dados = data;
+    //     console.log(this.dados);
+    //     console.log(data);
+    //     } , (error: any) => {
+    //       this.erro = error;
+    //       console.error( error)
+    //     });
+    // }
 }
