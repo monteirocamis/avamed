@@ -2,29 +2,34 @@
 
   <h1 class="titulo-page">
     CADASTRAR PROFISSIONAL
+    <div *ngFor="let lista of listaDeProfissionais">
+      Nome: {{lista.nome}}
+      Telefone: {{lista.telefone}}
+
+    </div>
   </h1>
 
   <form class="form bg-avamed">
     <div class="row">
       <div class="col mb-3">
         <label for="nome" class="form-label">Nome </label>
-        <input type="nome" class="form-control" id="nome" aria-describedby="nome">
+        <input type="nome" class="form-control" id="nome" aria-describedby="nome" >
      </div>
 
 
      <div class="col mb-3">
-      <label for="carteira" class="form-label">CRM</label>
+      <label for="carteira" class="form-label">Telefone</label>
       <input type="carteira" class="form-control" id="carteira" aria-describedby="carteira">
    </div>
     </div>
 
     <div class="row">
       <div class="col mb-3">
-        <label for="cpf" class="form-label"> CPF </label>
+        <label for="cpf" class="form-label"> Endereço </label>
         <input type="cpf" class="form-control" id="cpf" aria-describedby="cpf">
      </div>
      <div class="col mb-3">
-      <label for="endereco" class="form-label"> Especialidade </label>
+      <label for="endereco" class="form-label"> Ativo </label>
 
       <select id="" class="form-control">
         <option></option>
