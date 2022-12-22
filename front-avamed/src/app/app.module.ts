@@ -15,6 +15,10 @@ import { CadastroProfissionalComponent } from './cadastro-profissional/cadastro-
 import { CadastroEspecialidadeComponent } from './cadastro-especialidade/cadastro-especialidade.component';
 import { ResultadoAgendamentoComponent } from './resultado-agendamento/resultado-agendamento.component';
 import { ResultadoProfissionaisComponent } from './resultado-profissionais/resultado-profissionais.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { HttpClientModule} from '@angular/common/http';
+
+
 
 
 @NgModule({
@@ -28,13 +32,16 @@ import { ResultadoProfissionaisComponent } from './resultado-profissionais/resul
     CadastroProfissionalComponent,
     CadastroEspecialidadeComponent,
     ResultadoAgendamentoComponent,
-    ResultadoProfissionaisComponent
+    ResultadoProfissionaisComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]
