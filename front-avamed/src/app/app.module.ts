@@ -1,7 +1,7 @@
 import { NavigationService } from './service/navigation.service';
 import { BeneficiariosComponent } from './beneficiarios/beneficiarios.component';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
@@ -37,7 +37,8 @@ import { ResultadoProfissionaisComponent } from './resultado-profissionais/resul
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]

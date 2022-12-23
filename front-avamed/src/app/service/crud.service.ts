@@ -20,5 +20,9 @@ constructor(private http: HttpClient) {
     //return this.http.get(`https://pokeapi.co/api/v2/pokemon?limit=151`)
   }
 
+  public postProfissional(data: IProfissionalDto ): Observable<any> {
+   return this.http.post(`https://127.0.0.1:7042/CadastrarProfissional`, data)
+
+  }
 
 }

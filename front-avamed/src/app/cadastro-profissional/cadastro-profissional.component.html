@@ -2,83 +2,63 @@
 
   <h1 class="titulo-page">
     CADASTRAR PROFISSIONAL
-    <div *ngFor="let lista of listaDeProfissionais">
-      Nome: {{lista.nome}}
-      Telefone: {{lista.telefone}}
 
-    </div>
   </h1>
 
-  <form class="form bg-avamed">
+  <form class="form bg-avamed" [formGroup]="profissionalForm">
     <div class="row">
       <div class="col mb-3">
         <label for="nome" class="form-label">Nome </label>
-        <input type="nome" class="form-control" id="nome" aria-describedby="nome" >
-     </div>
+        <input type="nome" class="form-control" id="nome" aria-describedby="nome" formControlName="nome" >
+      </div>
 
-
-     <div class="col mb-3">
-      <label for="carteira" class="form-label">Telefone</label>
-      <input type="carteira" class="form-control" id="carteira" aria-describedby="carteira">
-   </div>
-    </div>
-
-    <div class="row">
-      <div class="col mb-3">
-        <label for="cpf" class="form-label"> Endereço </label>
-        <input type="cpf" class="form-control" id="cpf" aria-describedby="cpf">
-     </div>
-     <div class="col mb-3">
-      <label for="endereco" class="form-label"> Ativo </label>
-
-      <select id="" class="form-control">
-        <option></option>
-        <option>Cardiologista</option>
-        <option>Nutricionista</option>
-      </select>
-      <input class="btn" name="A" type="button" value="--Adicionar--"(click)="navigateEspecialidade()">
-
-
-
-
-      <!-- (click)="navigateEspecialidade()" -->
-
-   </div>
-    </div>
-
-
-    <div class="row">
       <div class="col mb-3">
         <label for="telefone" class="form-label"> Telefone </label>
-        <input type="telefone" class="form-control" id="telefone" aria-describedby="telefone">
-     </div>
-<!-- aa -->
-<div class="col-6 mb-3">
-  <label for="disabledSelect" class="form-label"> Ativo </label>
-  <select id="" class="form-control">
-    <option></option>
-    <option>Sim </option>
-    <option>Não </option>
-  </select>
-</div>
+        <input type="telefone" class="form-control" id="telefone" aria-describedby="telefone" formControlName="telefone">
+      </div>
     </div>
 
     <div class="row">
       <div class="col-6 mb-3">
         <label for="endereco" class="form-label"> Endereço  </label>
-        <input type="endero" class="form-control" id="endereco" aria-describedby="endereço">
+        <input type="endero" class="form-control" id="endereco" aria-describedby="endereço" formControlName="endereco">
+      </div>
 
-     </div>
+      <div class="col mb-3">
+        <label for="endereco" class="form-label"> Ativo </label>
+        <select id="" class="form-control">
+          <option></option>
+          <option>Cardiologista</option>
+          <option>Nutricionista</option>
+        </select>
+      <input class="btn" name="A" type="button" value="--Adicionar--"(click)="navigateEspecialidade()">
+
+   </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-6 mb-3">
+        <label for="disabledSelect" class="form-label"> Ativo </label>
+        <select id="" class="form-control">
+          <option></option>
+          <option>Sim </option>
+          <option>Não </option>
+        </select>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+
 
 
       </div>
 
-      <!-- ADICIONAR MODAL -->
       <div class="d-grid gap-2 mx-auto">
-        <button class="btn btn-form" type="button" >
-          Enviar
-        </button>
-        </div>
+      </div> -->
+      <button class="btn btn-form" type="button" (click)="submitCadastro()">
+        Enviar
+      </button>
 
   </form>
 </div>
