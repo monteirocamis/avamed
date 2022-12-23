@@ -3,11 +3,11 @@ import { Injectable } from '@angular/core';
 import { catchError, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class CrudService {
-
 
 constructor(private http: HttpClient) {
 }
@@ -24,5 +24,4 @@ constructor(private http: HttpClient) {
    return this.http.post(`https://127.0.0.1:7042/CadastrarProfissional`, data)
 
   }
-
 }

@@ -1,12 +1,11 @@
-import { NavigationService } from './service/navigation.service';
+import { NavigationService } from './services/navigation.service';
 import { BeneficiariosComponent } from './beneficiarios/beneficiarios.component';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
-
-
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import {MatDialogModule} from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -17,7 +16,6 @@ import { CadastroProfissionalComponent } from './cadastro-profissional/cadastro-
 import { CadastroEspecialidadeComponent } from './cadastro-especialidade/cadastro-especialidade.component';
 import { ResultadoAgendamentoComponent } from './resultado-agendamento/resultado-agendamento.component';
 import { ResultadoProfissionaisComponent } from './resultado-profissionais/resultado-profissionais.component';
-
 
 @NgModule({
   declarations: [
@@ -40,7 +38,7 @@ import { ResultadoProfissionaisComponent } from './resultado-profissionais/resul
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [NavigationService],
+  providers: [NavigationService , HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

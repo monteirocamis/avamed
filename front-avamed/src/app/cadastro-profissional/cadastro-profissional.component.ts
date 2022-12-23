@@ -1,4 +1,4 @@
-import { CrudService } from './../service/crud.service';
+import { CrudService } from './../services/crud.service';
 import { Component, OnInit, Input } from '@angular/core';
 import { Router  } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
