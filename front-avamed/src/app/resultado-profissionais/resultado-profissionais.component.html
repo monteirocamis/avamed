@@ -4,7 +4,10 @@
   RESULTADO PROFISSIONAIS
   </h1>
 
-
+  <div *ngFor="let lista of listaDeProfissionais">
+    Nome: {{lista}}
+   Telefone: {{lista.telefone}}
+  </div>
 
   <form class="form bg-avamed">
     <div class="box-profissa">

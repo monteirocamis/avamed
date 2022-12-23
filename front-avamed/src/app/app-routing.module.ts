@@ -1,4 +1,3 @@
-
 import { ResultadoProfissionaisComponent } from './resultado-profissionais/resultado-profissionais.component';
 import { ResultadoAgendamentoComponent } from './resultado-agendamento/resultado-agendamento.component';
 import { HospitalComponent } from './hospital/hospital.component';
@@ -20,7 +19,6 @@ const routes: Routes = [
   {path: 'resultado-agendamento' , component: ResultadoAgendamentoComponent},
   {path: 'resultado-profissionais' , component: ResultadoProfissionaisComponent},
   {path: '**' , redirectTo:'home'} // url desconhecida
-
 ];
 
 
