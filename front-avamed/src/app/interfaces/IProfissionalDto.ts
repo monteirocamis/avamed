@@ -1,5 +1,5 @@
 export interface IProfissionalDto {
-  IdProfissional: number,
+  IdProfissional?: number,
   Nome: string,
   Telefone?: string,
   Endereco?: string,
