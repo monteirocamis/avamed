@@ -1,15 +1,30 @@
 
 <div class="container">
 
-    <h1 class="titulo-page">
-      SUA SAÚDE É A NOSSA PRIORIDADE!
-    </h1>
+  <h1 class="titulo-page">
+    SUA SAÚDE É A NOSSA PRIORIDADE!
+  </h1>
 
-    <div class="d-grid gap-2 mx-auto">
-        <button class="btn btn-form" type="button">
-          Qual é o seu perfil?
+  <div class="d-grid gap-2 mx-auto">
+      <button class="btn btn-form" type="button">
+        Qual é o seu perfil?
+      </button>
+      </div>
+
+    <form class="form">
+      <div class="row">
+        <button class="btn btn-form" type="button" (click)="navigateBeneficiario()">
+          <div class="col mb-3 bg-avamed beneficiario">
+            <label for="beneficiario" class="form-label">Beneficiario </label>
+            <i class="material-icons">person</i>
+          </div>
         </button>
-        </div>
-
-        <form class="form">        <div class="row">          <button class="btn btn-form" type="button" (click)="navigateBeneficiario()">            <div class="col mb-3 bg-avamed beneficiario">              <label for="beneficiario" class="form-label">Beneficiario </label>              <i class="material-icons">person</i>            </div>          </button>          <button class="btn btn-form" type="button" (click)="navigateHospital()">            <div class="col mb-3 bg-avamed">              <label for="Empresa" class="form-label">Empresa </label>              <i class="material-icons">corporate_fare</i>            </div>          </button>        </div>      </form>
-  </div>
+        <button class="btn btn-form" type="button" (click)="navigateHospital()">
+          <div class="col mb-3 bg-avamed">
+            <label for="Empresa" class="form-label">Empresa </label>
+            <i class="material-icons">corporate_fare</i>
+          </div>
+        </button>
+      </div>
+    </form>
+</div>
