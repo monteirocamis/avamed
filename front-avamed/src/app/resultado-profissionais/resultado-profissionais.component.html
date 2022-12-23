@@ -4,13 +4,15 @@
   RESULTADO PROFISSIONAIS
   </h1>
 
-  <div *ngFor="let lista of listaDeProfissionais">
-    Nome: {{lista}}
-   Telefone: {{lista.telefone}}
-  </div>
-
   <form class="form bg-avamed">
     <div class="box-profissa">
+  <div *ngFor="let lista of listaDeProfissionais">
+    Nome: {{lista.nome}}
+   Telefone: {{lista.telefone}}
+   Ativo: {{lista.ativo}}
+   Endereço: {{lista.endereco}}
+  </div>
+
 
       <div class="row">
         <div class="col mb-3">
@@ -19,24 +21,22 @@
         </div>
 
 
-        <div class="col mb-3">
+        <!-- <div class="col mb-3">
           <label for="carteira" class="form-label">CRM</label>
-        </div>
+        </div> -->
       </div>
 
       <div class="row">
-        <div class="col mb-3">
+        <!-- <div class="col mb-3">
           <label for="cpf" class="form-label"> CPF </label>
 
-        </div>
-        <div class="col mb-3">
+        </div> -->
+         <div class="col mb-3">
           <label for="endereco" class="form-label"> Especialidade </label>
 
 
 
-          <!-- (click)="navigateEspecialidade()" -->
-
-        </div>
+           </div>
       </div>
 
 
@@ -70,7 +70,7 @@
 
 
 
-  <div class="box-profissa">
+  <!-- <div class="box-profissa">
 
     <div class="row">
       <div class="col mb-3">
@@ -94,7 +94,7 @@
 
 
 
-        <!-- (click)="navigateEspecialidade()" -->
+
 
       </div>
     </div>
@@ -104,7 +104,7 @@
       <div class="col mb-3">
       <label for="telefone" class="form-label"> Telefone </label>
    </div>
-   <!-- aa -->
+
    <div class="col-6 mb-3">
      <label for="disabledSelect" class="form-label"> Ativo </label>
 
@@ -120,7 +120,7 @@
 
 
 
-</div>
+</div> -->
 
 
 

@@ -23,7 +23,16 @@
         <label for="endereco" class="form-label"> Endereço  </label>
         <input type="endero" class="form-control" id="endereco" aria-describedby="endereço" formControlName="endereco">
       </div>
+      <div>
+        <label for="endereco" class="form-label"> Especialidade </label>
 
+        <select id="" class="form-control">
+          <option></option>
+          <option>Cardiologista</option>
+          <option>Nutricionista</option>
+        </select>
+        <input class="btn" name="A" type="button" value="--Adicionar--"(click)="navigateEspecialidade()">
+      </div>
 
     </div>
 
@@ -47,7 +56,7 @@
 
       <div class="d-grid gap-2 mx-auto">
       </div> -->
-      <button class="btn btn-form" type="button" (click)="submitCadastro()">
+      <button class="btn btn-form" type="button" (click)="submitCadastro()" (click)="navigateResultadoProf()">
         Enviar
       </button>
 
