@@ -43,10 +43,12 @@ input{
   border-radius: 10px;
   background-color: #EB7736 !important;
   color: white;
+  
 }
 
 
 .btn-form{
+  margin: 1px;
   padding: 10px 10px;
   border-radius: 10px;
   background-color: #EB7736;
