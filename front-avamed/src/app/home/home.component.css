@@ -38,7 +38,8 @@ input{
 }
 
 .bg-avamed{
-
+  display:flex;
+  flex-direction: column;
   padding: 30px 10px;
   border-radius: 10px;
   background-color: #EB7736 !important;
@@ -114,4 +115,3 @@ input{
  font-weight: bold;
  margin: 100px;
 }
-
