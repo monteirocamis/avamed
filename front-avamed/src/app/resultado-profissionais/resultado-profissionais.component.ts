@@ -1,4 +1,4 @@
-import { IProfissionalDto } from './../../interfaces/IProfissionalDto';
+import { IProfissionalDto } from './../interfaces/IProfissionalDto';
 
 import { Component, OnInit, Input } from '@angular/core';
 import { Router  } from '@angular/router';

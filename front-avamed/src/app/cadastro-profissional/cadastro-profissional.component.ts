@@ -20,6 +20,10 @@ export class CadastroProfissionalComponent implements OnInit{
   navigateEspecialidade(){
     this.router.navigate(['cadastro-especialidade'])
   }
+
+  navigateResultadoProf(){
+    this.router.navigate(['resultado-profissionais'])
+  }
   constructor(private router: Router, private crudProfissionais: CrudService ){
 
     }
