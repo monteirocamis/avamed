@@ -1,8 +1,6 @@
 import { IProfissionalDto } from './../interfaces/IProfissionalDto';
-
 import { Component, OnInit, Input } from '@angular/core';
 import { Router  } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
 import { CrudService } from 'src/app/services/crud.service';
 
 @Component({

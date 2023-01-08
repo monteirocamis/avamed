@@ -46,7 +46,7 @@ namespace AvaMed_Back.Controllers
 
             try
             {
-                if (idProfissional < 1 || idProfissional == null)
+                if (idProfissional < 1)
                 {
                     return BadRequest("O código informado é menor do que 1 ou é nulo");
                 }

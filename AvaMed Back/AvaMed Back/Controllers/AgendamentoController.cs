@@ -11,10 +11,10 @@ namespace AvaMed_Back.Controllers
         private readonly Projeto.Data.Contexto.AvamedContext _contexto;
         private readonly Projeto.Data.Interfaces.IAgendamentoRepositorio _agendamentoRepositorio;
         public AgendamentoController(
-            Projeto.Data.Contexto.AvamedContext _contexto,
+            Projeto.Data.Contexto.AvamedContext _context,
             Projeto.Data.Interfaces.IAgendamentoRepositorio agendamentoRepositorio)
         {
-            _contexto = _contexto;
+            _contexto = _context;
             _agendamentoRepositorio = agendamentoRepositorio;
         }
 
@@ -41,7 +41,7 @@ namespace AvaMed_Back.Controllers
         {
             try
             {
-                if(idAgendamento < 1 || idAgendamento == null)
+                if(idAgendamento < 1)
                 {
                     return BadRequest("O código informado não existe ou é nulo");
                 }

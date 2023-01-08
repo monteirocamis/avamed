@@ -13,10 +13,10 @@ namespace AvaMed_Back.Controllers
         private readonly Projeto.Data.Interfaces.IBeneficiarioRepositorio _beneficiarioRepositorio;
 
         public BeneficiariosController(
-            Projeto.Data.Contexto.AvamedContext _contexto,
+            Projeto.Data.Contexto.AvamedContext _context,
             Projeto.Data.Interfaces.IBeneficiarioRepositorio beneficiarioRepositorio)
         {
-            _contexto = _contexto;
+            _contexto = _context;
             _beneficiarioRepositorio = beneficiarioRepositorio;
         }
 
@@ -48,7 +48,7 @@ namespace AvaMed_Back.Controllers
 
             try
             {
-                if (idBeneficiario < 1 || idBeneficiario == null)
+                if (idBeneficiario < 1)
                 {
                     return BadRequest("O código informado é menor do que 1 ou é nulo");
                 }
